@@ -1,0 +1,194 @@
+/* BACKGROUND UTAMA */
+body {
+background-color: #DCEEFF;
+font-family: "Quicksand", sans-serif;
+margin: 0;
+}
+
+/* EFEK LINK */
+a:hover {
+color: #8ED8FF;
+font-weight: bold;
+}
+
+a:hover::after {
+content: "💙";
+}
+
+/* MENU NAVIGASI */
+nav a {
+text-decoration: none;
+color: white;
+transition: 0.3s;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+justify-content: space-around;
+padding: 20px;
+margin: 0;
+}
+
+/* HEADER UTAMA BANDUNG */
+body > header {
+background-color: #B8DEFF;
+color: #123B69;
+padding-top: 5px;
+}
+
+body > header h1 {
+text-align: center;
+color: #123B69;
+padding-bottom: 2px;
+}
+
+body > header p {
+text-align: center;
+color: #123B69;
+padding: 20px;
+}
+
+/* NAVBAR */
+nav {
+background-color: #174A7E;
+}
+
+/* POSISI KONTEN */
+main {
+display: flex;
+max-width: 1250px;
+margin: 40px auto;
+padding: 0 25px;
+gap: 30px;
+align-items: flex-start;
+box-sizing: border-box;
+}
+
+/* AREA LUAR ARTIKEL */
+#content {
+flex: 3;
+min-width: 0;
+padding: 20px;
+border-radius: 20px;
+background-color: #A9D4F5;
+box-shadow: 0 4px 8px rgba(23, 74, 126, 0.2);
+box-sizing: border-box;
+}
+
+/* KOTAK SEJARAH, GEOGRAFIS, WISATA */
+#content article {
+background-color: #EDF7FF;
+border: 2px solid #8ABDE8;
+margin-bottom: 55px;
+padding: 25px;
+border-radius: 18px;
+box-sizing: border-box;
+}
+
+#content article:last-child {
+margin-bottom: 0;
+}
+
+/* JUDUL ARTIKEL */
+#content .subjudul {
+color: #174A7E;
+margin-bottom: 20px;
+}
+
+/* GAMBAR ARTIKEL */
+#content .gambar {
+display: block;
+width: 100%;
+max-width: 500px;
+height: auto;
+margin: 20px auto;
+border-radius: 12px;
+}
+
+/* PARAGRAF ARTIKEL */
+#content p {
+color: #263F59;
+line-height: 1.8;
+margin-bottom: 20px;
+}
+
+/* KOTAK SAMPING */
+aside {
+flex: 1;
+min-width: 230px;
+padding: 20px;
+background-color: #EDF7FF;
+border: 2px solid #8ABDE8;
+border-radius: 20px;
+box-shadow: 0 4px 8px rgba(23, 74, 126, 0.15);
+box-sizing: border-box;
+}
+
+/* HEADER DI KOTAK SAMPING */
+aside article > header {
+background-color: #EDF7FF;
+color: #174A7E;
+padding: 10px;
+}
+
+/* TULISAN KOTAK SAMPING */
+aside .subjudul,
+aside .p1,
+aside figcaption {
+color: #174A7E;
+}
+
+/* LOGO PERSIB */
+aside .gambar {
+display: block;
+width: 100px;
+max-width: 100%;
+height: auto;
+margin: 10px auto;
+object-fit: contain;
+}
+
+/* TABEL INFORMASI */
+aside .tabel {
+width: 100%;
+color: #263F59;
+border-collapse: collapse;
+}
+
+aside .tabel th,
+aside .tabel td {
+padding: 8px 5px;
+border-bottom: 1px solid #B8DEFF;
+text-align: left;
+}
+
+/* FOOTER */
+footer {
+background-color: #174A7E;
+color: white;
+text-align: center;
+padding: 15px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 700px) {
+main {
+flex-direction: column;
+margin: 20px auto;
+padding: 0 15px;
+}
+
+#content,
+aside {
+    width: 100%;
+    flex: auto;
+    min-width: 0;
+}
+
+#content article {
+    margin-bottom: 35px;
+    padding: 18px;
+}
+
+}
